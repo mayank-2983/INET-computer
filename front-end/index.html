@@ -1,0 +1,2323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inet Computer</title>
+    <link rel="stylesheet" href="./css/base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- swiper  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+   <style>
+    html{
+        font-size: 62.5%;
+    }
+   </style>
+
+</head>
+
+<body>
+    <section class="live-chat">
+        <div class="chat-cont">
+            <img src="img/live-chat1.png" alt="">
+        </div>
+    </section>
+    <div class="main-content">
+        <header>
+            <div class="container">
+                
+                <div class="header-container">
+                    <div class="logo-img">
+                        <img height="100px" src="img/logo.png" alt="">
+                    </div>
+
+                    <nav class="m1">
+                        <a href="#" onMouseOver="this.style.color='#00008B'" onMouseOut="this.style.color='black'">Home</a>
+                        <a href="#" onMouseOver="this.style.color='#00008B'" onMouseOut="this.style.color='black'">SHOP</a>
+                        <a href="#" onMouseOver="this.style.color='#00008B'" onMouseOut="this.style.color='black'">Blog</a>
+                        <a href="#" onMouseOver="this.style.color='#00008B'" onMouseOut="this.style.color='black'">Pages</a>
+                        <a href="#" onMouseOver="this.style.color='#00008B'" onMouseOut="this.style.color='black'">ABOUT</a>
+                        <a href="#" onMouseOver="this.style.color='#00008B'" onMouseOut="this.style.color='black'">CONTACT</a>
+                    </nav>
+
+                    <div class="head-cons">
+                       
+                        <div class="search-icon pro-icon" data-name="s1">
+                            <a href="#">
+                                <img src="./img/site-search-icon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="cart pro-icon  " data-name="c1">
+                            <a href="#">
+                                <img src="./img/shoppingcart-icon.png" alt="">
+                                <sup>02</sup>
+                            </a>
+                        </div>
+                        <div class="profile pro-icon" data-name="f1">
+                            <a href="#">
+                                <img src="./img/setting-icon.png" alt="">
+                            </a>
+                        </div>
+                        <!-- <div class="list pro-icon" data-name="m1" id="menu-btn">
+                            <i class="bi bi-list"></i>
+                        </div> -->
+                        <div class="list pro-icon" id="menu-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                            <i class="bi bi-list"></i>
+                        </div>
+                    </div>
+
+                    <form action="" class=" search-from silde-box s1 ">
+                        <div class="perent d-flex">
+                            <input type="text" id="search-box" class="box" placeholder="search here...">
+                            <label for="search-box"> <i class="bi bi-search"></i></label>
+                        </div>
+                    </form>
+
+                    <div class="shopping-cart silde-box c1">
+                        <div class="box">
+                            <i class="bi bi-trash-fill"></i>
+                            <img src="img/cart-img-1.png" alt="">
+                            <div class="content">
+                                <h3>watermalon</h3>
+                                <span class="price">100/- </span>
+                                <span class="quantity">qty : 2 </span>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <i class="bi bi-trash-fill"></i>
+                            <img src="img/cart-img-2.png" alt="">
+                            <div class="content">
+                                <h3>onionn</h3>
+                                <span class="price">50/- </span>
+                                <span class="quantity">qty : 1 </span>
+                            </div>
+                        </div>
+                        <div class="total-cart">total: 19.69 </div>
+                        <a href="#" class="btn-custom">checkout</a>
+                    </div>
+
+                    <div class="silde-box login-form f1">
+                        <ul class="settings">
+                            <li><a href="">Login / Registration</a></li>
+                            <li><a href="">My Account</a></li>
+                            <li><a href="">Wishlist</a></li>
+                            <li><a href="">Checkout</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel" style="width: 275px;">
+                        <div class="offcanvas-header">
+                          <div class="offcanvas-title" id="offcanvasRightLabel"><img src="./img/logo.png" alt="" style="height: 118px;"></div>
+                          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <menu class="">
+                                <a href="#">Home</a>
+                                <a href="#">SHOP</a>
+                                <a href="#">Blog</a>
+                                <a href="#">Pages</a>
+                                <a href="#">ABOUT</a>
+                                <a href="#">CONTACT</a>
+                            </menu>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+
+            <section class="slider">
+                <div class="shlideshow">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="banners">
+                                    <img src="./img/placeholder-1903x781.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="banners">
+                                    <img src="./img/placeholder-1903x781.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="categories">
+
+                <div class="container">
+                    <div class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="categorise-item">
+                                        <div class="cate-img">
+                                            <img src="img/categories/motherboard.jpg" alt="">
+                                        </div>
+                                        <div class="cate-txt">
+                                            <h3>Fashion</h3>
+                                            <p> <span>10</span> products</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="categorise-item">
+                                        <div class="cate-img">
+                                            <img src="img/categories/dummy.jpg" alt="">
+                                        </div>
+                                        <div class="cate-txt">
+                                            <h3>Fashion</h3>
+                                            <p> <span>10</span> products</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="categorise-item">
+                                        <div class="cate-img">
+                                            <img src="img/categories/dummy.jpg" alt="">
+                                        </div>
+                                        <div class="cate-txt">
+                                            <h3>Fashion</h3>
+                                            <p> <span>10</span> products</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="categorise-item">
+                                        <div class="cate-img">
+                                            <img src="img/categories/dummy.jpg" alt="">
+                                        </div>
+                                        <div class="cate-txt">
+                                            <h3>Fashion</h3>
+                                            <p> <span>10</span> products</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="categorise-item">
+                                        <div class="cate-img">
+                                            <img src="img/categories/dummy.jpg" alt="">
+                                        </div>
+                                        <div class="cate-txt">
+                                            <h3>Fashion</h3>
+                                            <p> <span>10</span> products</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="categorise-item">
+                                        <div class="cate-img">
+                                            <img src="img/categories/dummy.jpg" alt="">
+                                        </div>
+                                        <div class="cate-txt">
+                                            <h3>Fashion</h3>
+                                            <p> <span>10</span> products</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="categorise-item">
+                                        <div class="cate-img">
+                                            <img src="img/categories/dummy.jpg" alt="">
+                                        </div>
+                                        <div class="cate-txt">
+                                            <h3>Fashion</h3>
+                                            <p> <span>10</span> products</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="categorise-item">
+                                        <div class="cate-img">
+                                            <img src="img/categories/dummy.jpg" alt="">
+                                        </div>
+                                        <div class="cate-txt">
+                                            <h3>Fashion</h3>
+                                            <p> <span>10</span> products</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="container">
+                                    <div class="categorise-item">
+                                        <div class="cate-img">
+                                            <img src="img/categories/dummy.jpg" alt="">
+                                        </div>
+                                        <div class="cate-txt">
+                                            <h3>Fashion</h3>
+                                            <p> <span>10</span> products</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="py-5">
+                <div class="container">
+                    <div class="services">
+                        <div class="services-item">
+                            <div class="serv-icon">
+                                <i class="bi bi-truck"></i>
+                            </div>
+                            <div class="serv-txt">
+                                <h3>FREE SHIPPING & RETURN</h3>
+                                <p>Free shipping on all orders over $99.</p>
+                            </div>
+                        </div>
+
+                        <div class="services-item">
+                            <div class="serv-icon">
+                                <i class="bi bi-coin"></i>
+                            </div>
+                            <div class="serv-txt">
+                                <h3>MONEY BACK GUARANTEE</h3>
+                                <p>100% money back guarantee</p>
+                            </div>
+                        </div>
+
+                        <div class="services-item">
+                            <div class="serv-icon">
+                                <i class="bi bi-headset"></i>
+                            </div>
+                            <div class="serv-txt">
+                                <h3>ONLINE SUPPORT 24/7</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+
+                        <div class="services-item">
+                            <div class="serv-icon">
+                                <i class="bi bi-shield-check"></i>
+                            </div>
+                            <div class="serv-txt">
+                                <h3>SECURE PAYMENT</h3>
+                                <p>Lorem ipsum dolor sit amet.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="adds">
+                        <div class="add-containr">
+                            <div class="row">
+                                <div class="col-6">
+                                    <img class="img-fluid" src="img/advertisement/add3.jpg" alt="">
+                                </div>
+                                <div class="col-6">
+                                    <img class="img-fluid" src="img/advertisement/add4.jpg" alt="">
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="product-slider">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="sec-head">
+                                <h2 class="fw-bold">Special Offers</h2>
+                            </div>
+
+                            <div class="swiper mySwiper3">
+                                <div class="swiper-wrapper"  >
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Quick View</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="model-cont d-flex">
+                                                <div class="model-pro-img">
+                                                    <img src="img/product/pro1.jpg" alt="">
+                                                </div>
+                                                <div class="model-pro-txt">
+                                                    <h2>Beats Solo HD Drenched</h2>
+                                                    <div class="rating">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </div>
+                                                    <h2 class="mt-3">300.00</h2>
+                                                    <div class="pro-discription">
+                                                        Pellentesque habitant morbi tristique senectus et netus et
+                                                        malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                                                        feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                                                        libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                                                        est. Mauris placerat eleifend leo.
+                                                    </div>
+                                                    <div class="model-categories text-secondary fw-bold mt-3">
+                                                        CATEGORIES: <strong class="text-dark ms-2"> AUDIO
+                                                            AMPLIFIER</strong>
+                                                    </div>
+                                                    <div class="quantity-counter">
+                                                        <button>-</button>
+                                                        <input type="number">
+                                                        <button>+</button>
+                                                    </div>
+                                                    <div class="model-cart py-3">
+                                                        <div class="model-cart-btn">
+                                                            <i class="bi bi-bag-heart"></i> Add to cart
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+
+            <!-- <section class="categories-tab">
+                <nav class="tab-nav">
+                    <label class="nav" for="tab-1">Tab 1</label>
+                    <label class="nav" for="tab-2">Tab 2</label>
+                    <label class="nav" for="tab-3">Tab 3</label>
+                </nav>
+
+               
+            </section> -->
+
+            <section class="categories-tab">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="cate-container">
+                                <div class="sec-head">
+                                    <h2 class="fw-bold">Special Offers</h2>
+                                </div>
+
+                                <div class="tabs">
+                                    <div class="tab__btns">
+                                        <button class="tab__btn tab__btn--active" data-item="item-1">
+                                            <span>Tab 1</span>
+                                        </button>
+                                        <button class="tab__btn" data-item="item-2">
+                                            <span>Tab 2</span>
+                                        </button>
+                                        <button class="tab__btn" data-item="item-3">
+                                            <span>Tab 3</span>
+                                        </button>
+                                        <button class="tab__btn" data-item="item-4">
+                                            <span>Tab 4</span>
+                                        </button>
+                                    </div>
+
+                                    <div class="tab__items">
+                                        <div id="item-1" class="tab__item tab__item--active">
+                                            <div class="swiper mySwiper3">
+                                                <div class="swiper-wrapper"
+                                                     >
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="item-2" class="tab__item">
+                                            <div class="swiper mySwiper3">
+                                                <div class="swiper-wrapper"
+                                                     >
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="item-3" class="tab__item">
+                                            <div class="swiper mySwiper3">
+                                                <div class="swiper-wrapper"
+                                                     >
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="item-4" class="tab__item">
+                                            <div class="swiper mySwiper3">
+                                                <div class="swiper-wrapper"
+                                                     >
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="swiper-slide">
+                                                        <div class="product-container">
+                                                            <div class="pro-img">
+                                                                <div class="watchlist">
+                                                                    <i class="bi bi-bag-heart"></i>
+                                                                </div>
+                                                                <img class="img-fluid" src="img/product/pro1.jpg"
+                                                                    alt="">
+                                                                <div class="quick-view" data-bs-toggle="modal"
+                                                                    data-bs-target="#exampleModal">
+                                                                    <p>Quick View</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="product-txt">
+                                                                <span class="pro-categories">
+                                                                    <a href="#">Audio Amplifier</a>
+                                                                    <a href="#">Electronic Cigarettes</a>
+                                                                </span>
+                                                                <h3>Beats Solo HD Drenched</h3>
+                                                                <div class="rating">
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                    <i class="bi bi-star-fill"></i>
+                                                                </div>
+                                                                <h2>300.00</h2>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="latest-product">
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="sec-head">
+                                <h2 class="fw-bold">latest product</h2>
+                            </div>
+
+                            <div class="swiper mySwiper3 swip-pad">
+                                <div class="swiper-wrapper"  >
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="product-container">
+                                            <div class="pro-img">
+                                                <div class="watchlist">
+                                                    <i class="bi bi-bag-heart"></i>
+                                                </div>
+                                                <img class="img-fluid" src="img/product/pro1.jpg" alt="">
+                                                <div class="quick-view" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                    <p>Quick View</p>
+                                                </div>
+                                            </div>
+                                            <div class="product-txt">
+                                                <span class="pro-categories">
+                                                    <a href="#">Audio Amplifier</a>
+                                                    <a href="#">Electronic Cigarettes</a>
+                                                </span>
+                                                <h3>Beats Solo HD Drenched</h3>
+                                                <div class="rating">
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                </div>
+                                                <h2>300.00</h2>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">Quick View</h1>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div class="model-cont d-flex">
+                                                <div class="model-pro-img">
+                                                    <img src="img/product/pro1.jpg" alt="">
+                                                </div>
+                                                <div class="model-pro-txt">
+                                                    <h2>Beats Solo HD Drenched</h2>
+                                                    <div class="rating">
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                        <i class="bi bi-star-fill"></i>
+                                                    </div>
+                                                    <h2 class="mt-3">300.00</h2>
+                                                    <div class="pro-discription">
+                                                        Pellentesque habitant morbi tristique senectus et netus et
+                                                        malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                                                        feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                                                        libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                                                        est. Mauris placerat eleifend leo.
+                                                    </div>
+                                                    <div class="model-categories text-secondary fw-bold mt-3">
+                                                        CATEGORIES: <strong class="text-dark ms-2"> AUDIO
+                                                            AMPLIFIER</strong>
+                                                    </div>
+                                                    <div class="quantity-counter">
+                                                        <button>-</button>
+                                                        <input type="number">
+                                                        <button>+</button>
+                                                    </div>
+                                                    <div class="model-cart py-3">
+                                                        <div class="model-cart-btn">
+                                                            <i class="bi bi-bag-heart"></i> Add to cart
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog">
+
+                <div class="container">
+
+                    <div class="row justify-content-around mt-80">
+                        <div class="col-12">
+                            <div class="sec-head mb-4">
+                                <h2 class="fw-bold">Latest News From Blog</h2>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="swiper mySwiperblg swip-pad">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="blog-item">
+                                            <div class="blog-img">
+                                                <img class="img-fluid" src="img/blog/blog1.jpg" alt="">
+                                            </div>
+                                            <div class="date">
+                                                <h4 class="text-center">03 <br> Feb</h4>
+                                            </div>
+                                            <div class="blog-txt">
+                                                <h3>The Real Perks of SMM Panel</h3>
+                                                <div class="blog-link">
+                                                    <a href="#"> <i class="bi bi-arrow-right"></i> Read More</a>
+                                                    <div class="overlay"></div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="blog-item">
+                                            <div class="blog-img">
+                                                <img class="img-fluid" src="img/blog/blog2.jpg" alt="">
+                                            </div>
+                                            <div class="date">
+                                                <h4 class="text-center">10 <br> Nov</h4>
+                                            </div>
+                                            <div class="blog-txt">
+                                                <h3>Social Media Marketing Platforms to boos...</h3>
+                                                <div class="blog-link">
+                                                    <a href="#"> <i class="bi bi-arrow-right"></i> Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="blog-item">
+                                            <div class="blog-img">
+                                                <img class="img-fluid" src="img/blog/blog3.jpg" alt="">
+                                            </div>
+                                            <div class="date">
+                                                <h4 class="text-center">03 <br> Feb</h4>
+                                            </div>
+                                            <div class="blog-txt">
+                                                <h3>Benefits Of Choosing The Best SMM Servic...</h3>
+                                                <div class="blog-link">
+                                                    <a href="#"> <i class="bi bi-arrow-right"></i> Read More</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="review">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-7">
+                            <div class="sec-head text-center">
+                                <h1 class="fw-bold">Real talk from our real customers</h1>
+                                <p>Loyal customers, they don’t just come back, they don’t simply recommend you, they insist that their friends do business with you.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row align-items-center">
+                        <div class="col-12 col-md-3">
+                            <div class="company-rev">
+                                <div class="rev-logo">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 255.2 80.3"
+                                        style="enable-background:new 0 0 255.2 80.3;" xml:space="preserve">
+                                        <style type="text/css">
+                                            .st0 {
+                                                fill: #4285F4;
+                                            }
+
+                                            .st1 {
+                                                fill: #EA4335;
+                                            }
+
+                                            .st2 {
+                                                fill: #FBBC05;
+                                            }
+
+                                            .st3 {
+                                                fill: #34A853;
+                                            }
+                                        </style>
+                                        <g id="XMLID_11_">
+                                            <path id="XMLID_10_" class="st0"
+                                                d="M31.9,28.6v8.6h20.5c-0.6,4.8-2.2,8.3-4.7,10.8c-3,3-7.7,6.3-15.8,6.3 c-12.6,0-22.5-10.2-22.5-22.8S19.2,8.6,31.9,8.6c6.8,0,11.8,2.7,15.5,6.1l6-6C48.3,3.8,41.4,0,31.9,0C14.6,0,0,14.1,0,31.4 s14.6,31.4,31.9,31.4c9.4,0,16.4-3.1,21.9-8.8c5.7-5.7,7.4-13.6,7.4-20.1c0-2-0.1-3.8-0.5-5.4H31.9z" />
+                                            <path id="XMLID_24_" class="st1"
+                                                d="M86.9,21.6c-11.2,0-20.4,8.5-20.4,20.3c0,11.7,9.1,20.3,20.4,20.3s20.4-8.6,20.4-20.3 C107.2,30.1,98.1,21.6,86.9,21.6z M86.9,54.2c-6.1,0-11.4-5.1-11.4-12.3c0-7.3,5.3-12.3,11.4-12.3c6.1,0,11.4,5,11.4,12.3 C98.3,49.1,93,54.2,86.9,54.2z" />
+                                            <path id="XMLID_21_" class="st0"
+                                                d="M186.6,26.1h-0.3c-2-2.4-5.8-4.5-10.7-4.5c-10.1,0-19,8.8-19,20.3c0,11.4,8.8,20.3,19,20.3 c4.9,0,8.7-2.2,10.7-4.6h0.3v2.8c0,7.7-4.2,11.9-10.8,11.9c-5.4,0-8.8-3.9-10.2-7.2l-7.7,3.2c2.2,5.4,8.1,12,18,12 c10.4,0,19.3-6.1,19.3-21.1V22.7h-8.4V26.1z M176.4,54.2c-6.1,0-10.8-5.2-10.8-12.3c0-7.2,4.7-12.3,10.8-12.3 c6.1,0,10.8,5.2,10.8,12.4C187.3,49,182.5,54.2,176.4,54.2z" />
+                                            <path id="XMLID_18_" class="st2"
+                                                d="M132.3,21.6c-11.2,0-20.4,8.5-20.4,20.3c0,11.7,9.1,20.3,20.4,20.3s20.4-8.6,20.4-20.3 C152.6,30.1,143.5,21.6,132.3,21.6z M132.3,54.2c-6.1,0-11.4-5.1-11.4-12.3c0-7.3,5.3-12.3,11.4-12.3c6.1,0,11.4,5,11.4,12.3 C143.7,49.1,138.4,54.2,132.3,54.2z" />
+                                            <path id="XMLID_3_" class="st3" d="M202.1,0.8h8.8v61.3h-8.8V0.8z" />
+                                            <path id="XMLID_14_" class="st1"
+                                                d="M237.9,54.2c-4.5,0-7.7-2.1-9.8-6.1l27.1-11.2l-0.9-2.3c-1.7-4.5-6.8-12.9-17.3-12.9 c-10.4,0-19.1,8.2-19.1,20.3c0,11.4,8.6,20.3,20.1,20.3c9.3,0,14.7-5.7,16.9-9l-6.9-4.6C245.6,51.9,242.4,54.2,237.9,54.2 L237.9,54.2z M237.3,29.2c3.6,0,6.7,1.9,7.7,4.5l-18.3,7.6C226.6,32.7,232.7,29.2,237.3,29.2z" />
+                                        </g>
+                                    </svg>
+                                </div>
+                                <div class="rev-txt">
+                                    <div class="rev-rating">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </div>
+                                    <h2>EXCELLENT</h2>
+                                    <p>Based on <strong>423 reviews</strong> </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-9">
+
+                            <div class="swiper mySwiperrvw swip-pad">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="rev-box">
+                                            <div class="rev-box-hed">
+                                                <div class="rev-usr-img">
+                                                    <img src="img/review/r1.png" alt="">
+                                                </div>
+                                                <div class="rev-usr-name">
+                                                    <h4>Arbindo Tekcham</h4>
+                                                    <p>2022-11-23</p>
+                                                </div>
+                                            </div>
+                                            <div class="rev-box-txt">
+                                                <div class="rev-box-txt-retting">
+
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+
+                                                </div>
+                                                <p>Everything is great even the packaging and the customer service just
+                                                    wow👍🏻</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="rev-box">
+                                            <div class="rev-box-hed">
+                                                <div class="rev-usr-img">
+                                                    <img src="img/review/r1.png" alt="">
+                                                </div>
+                                                <div class="rev-usr-name">
+                                                    <h4>Arbindo Tekcham</h4>
+                                                    <p>2022-11-23</p>
+                                                </div>
+                                            </div>
+                                            <div class="rev-box-txt">
+                                                <div class="rev-box-txt-retting">
+
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+
+                                                </div>
+                                                <p>Everything is great even the packaging and the customer service just
+                                                    wow👍🏻</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="rev-box">
+                                            <div class="rev-box-hed">
+                                                <div class="rev-usr-img">
+                                                    <img src="img/review/r1.png" alt="">
+                                                </div>
+                                                <div class="rev-usr-name">
+                                                    <h4>Arbindo Tekcham</h4>
+                                                    <p>2022-11-23</p>
+                                                </div>
+                                            </div>
+                                            <div class="rev-box-txt">
+                                                <div class="rev-box-txt-retting">
+
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+
+                                                </div>
+                                                <p>Everything is great even the packaging and the customer service just
+                                                    wow👍🏻</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="rev-box">
+                                            <div class="rev-box-hed">
+                                                <div class="rev-usr-img">
+                                                    <img src="img/review/r1.png" alt="">
+                                                </div>
+                                                <div class="rev-usr-name">
+                                                    <h4>Ninad Tagde</h4>
+                                                    <p>2022-11-15</p>
+                                                </div>
+                                            </div>
+                                            <div class="rev-box-txt">
+                                                <div class="rev-box-txt-retting">
+
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+
+                                                </div>
+                                                <p>My first time experience was great from EZPZ solutions. All the parts were genuine covered with warranty. And price was great too.I</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="rev-box">
+                                            <div class="rev-box-hed">
+                                                <div class="rev-usr-img">
+                                                    <img src="img/review/r1.png" alt="">
+                                                </div>
+                                                <div class="rev-usr-name">
+                                                    <h4>Bhavin Kothari</h4>
+                                                    <p>2022-11-14</p>
+                                                </div>
+                                            </div>
+                                            <div class="rev-box-txt">
+                                                <div class="rev-box-txt-retting">
+
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+
+                                                </div>
+                                                <p>Adnan is a great guy. Very helpful. Very knowledgeable.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="rev-box">
+                                            <div class="rev-box-hed">
+                                                <div class="rev-usr-img">
+                                                    <img src="img/review/r1.png" alt="">
+                                                </div>
+                                                <div class="rev-usr-name">
+                                                    <h4>Nirav Senghani</h4>
+                                                    <p>2022-11-02</p>
+                                                </div>
+                                            </div>
+                                            <div class="rev-box-txt">
+                                                <div class="rev-box-txt-retting">
+
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+                                                    <i class="bi bi-star-fill"></i>
+
+                                                </div>
+                                                <p>I personally want to put 10 star for ezpz solution Pvt. Ltd. Fabulous service and continuously following up for dispatch.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+            <section class="brands">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="swiper mySwiperbrd">
+                                <div class="swiper-wrapper" >
+                                    <div class="swiper-slide">
+                                        <div class="brd-img">
+                                            <img class="img-fluid" src="img/brands/br1.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="brd-img">
+                                            <img class="img-fluid" src="img/brands/br2.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="brd-img">
+                                            <img class="img-fluid" src="img/brands/br3.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="brd-img">
+                                            <img class="img-fluid" src="img/brands/b4.png" alt="">
+
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="brd-img">
+                                            <img class="img-fluid" src="img/brands/br5.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="brd-img">
+                                            <img class="img-fluid" src="img/brands/br6.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="brd-img">
+                                            <img class="img-fluid" src="img/brands/br7.png" alt="">
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            
+
+        </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5 col-lg-3">
+                        <div class="foot-block">
+                            <div class="foot-txt">
+                                <h3>ABOUT US</h3>
+                                <p>768 Market Street San Francisco, CA 64015, United States</p>
+                                <p class="m-0">customer@kompi.com</p>
+                                <p>(+021) 345 678 910</p>
+                                <div class="foot-logo">
+                                    <img src="img/logo-kompi-light.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-md-3">
+                        <div class="foot-block">
+                            <div class="foot-txt">
+                                <h3> QUICK LINK
+                                </h3>
+                                <ul class="foot-link">
+                                    <li> <a href="#"> Contact Us</a></li>
+                                    <li> <a href="#"> About Us</a></li>
+                                    <li> <a href="#"> Payment</a></li>
+                                    <li> <a href="#"> Careers</a></li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12  col-md-3">
+                        <div class="foot-block">
+                            <div class="foot-txt">
+                                <h3> CUSTOMER SERVICE
+                                </h3>
+                                <ul class="foot-link">
+                                    <li> <a href="#"> Help Center</a></li>
+                                    <li> <a href="#"> Return an Item</a></li>
+                                    <li> <a href="#"> Return Policy</a></li>
+                                    <li> <a href="#"> Privacy & Security</a></li>
+                                    <li> <a href="#"> Feedback</a></li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-lg-3">
+                        <!-- <div class="foot-block">
+                            <div class="foot-txt">
+                                <h3>Social Links</h3>
+                                <p>Eeget facilisi uturpis nisi tempus porttitor nunc interdum. Elit a auctor eget auctor.</p>
+                                
+                            </div>
+                        </div> -->
+
+                        <div class="foot-block">
+                            <div class="news-latter">
+                                <div class="foot-txt">
+                                    <h3> Newslatter</h3>
+                                </div>
+                                
+                                <div class="mail-box">
+                                    <form action="">
+                                    <input class="form-control email-inp" type="text" placeholder="Email*">
+                                    <input class="btn btn-primary" style="font-size: 14px;" type="submit" value="Subscribe">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+        <div class="copy-rights">
+                <p>
+                    © 2023 inetCom. Powered by Sattu.</p>
+        </div>
+    </div>
+
+    <section class="pop-up-email">
+        <div class="pop-up-model">
+
+            <div class="close-btn">
+                <i class="bi bi-x-lg"></i>
+            </div>
+          <div class="pop-up-img">
+            <img src="img/popup/Offer_Pop-up.webp" alt="">
+          </div>
+          <div class="pop-up-form">
+            <h2>JOIN OUR MAILING LIST</h2>
+            <p>Sign Up for exclusive updates, new arrivals & insider only discounts</p>
+            <form action="" class="popUp-form">
+                <input type="email" class="form-control email-txt" required placeholder="enter yoyr email address">
+                <input type="submit" class="popup-sub" value="SUBMIT">
+            </form>
+            <div class="pop-up-social-media">
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-youtube"></i>
+            </div>
+
+            <div class="pop-up-checkbox">
+                <input type="checkbox" name="" id="">
+                <a href="#">No,Thanks</a>
+            </div>
+          </div>
+        </div>
+    </section>
+</body>
+
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<!-- jquery  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- Isotop plugin cdn  -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+    integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="./js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+
+
+</html>

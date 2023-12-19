@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/base.css">
+  <!-- bootstap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+  <!-- icons  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+  <!-- swiper  -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+  <title>Document</title>
+  <style>
+    .swiper {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+ 
+
+  .mySwiper {
+    height: 20%;
+    box-sizing: border-box;
+    padding: 10px 0;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  </style>
+</head>
+
+<body>
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-lg-6">
+          <div class="pro-page-img-cont">
+
+            <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiperpropage2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="magnifiedImg"  src="img/dummy-pro1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="magnifiedImg"  src="img/dummy-pro2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img class="magnifiedImg"  src="img/dummy-pro3.jpg" />
+                </div>
+
+
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+            <div thumbsSlider="" class="swiper mySwiperpropage mt-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="img/dummy-pro1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/dummy-pro2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/dummy-pro3.jpg" />
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6 mt-5 mt-lg-0">
+          <div class="pro-page-txt">
+            <h2>Porto Extended Layout</h2>
+            <div class="pro-page-rivewrate">
+              <div class="d-flex gap-2 gap-md-5">
+                <div class="star-rate">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                </div>
+                <div class="rivew-status">
+                  <p> ( There are no reviews yet. )
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pro-page-price">
+              <h3> <del> &#8377;280.00</del> </h3>
+              <h3> &#8377;230.00</h3>
+            </div>
+
+            <div class="pro-page-discription">
+              <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet
+                quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+            </div>
+
+
+
+            <div class="pro-page-categories">
+              <p><strong>Categpries:  </strong> compute accesories</p>
+            </div>
+
+           
+              <div class="pro-page-varients">
+              
+                <strong>Color:</strong>
+                <div class="colo-var">
+                  <div class="red"></div>
+                  <div class="green"></div>
+                  <div class="yellow"></div>
+                  <div class="black"></div>
+                </div>
+             
+            </div>
+
+            <div class="pro-page-varients">
+              <strong>Size:</strong>
+              <div class="size-var">
+                <div>sm</div>
+                <div>md</div>
+                <div>xl</div>
+                
+              </div>
+            </div>
+
+            <div class="mt-2 mt-xl-5">
+            <div class="quantity">
+              <a href="#" data-id="pro" class="quantity__minus"><span>-</span></a>
+              <input data-id="pro" name="quantity" type="text" class="quantity__input" value="1">
+              <a href="#" data-id="pro" class="quantity__plus"><span>+</span></a>
+            </div>
+
+            <div class="pro-page-cart-btn">
+              <button class="crt-btn">
+               Add to cart
+              </button>
+             <div class="like-icn">
+               <i class="bi bi-heart"></i>
+             </div>
+           </div>
+           <div class="pro-page-buy-btn">
+            <button class="buy-btn">
+              Buy it now
+            </button>
+           </div>
+            </div>
+
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pro-page-tabs">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="pro-page-tabs-container">
+            <div class="tab-links">
+              <a href="#description" data-tab="description" class="b-nav-tab active">
+                Description
+              </a>
+              <a href="#Shipping" data-tab="Shipping" class="b-nav-tab">
+                Shipping & Return
+              </a>
+              <a href="#review" data-tab="review" class="b-nav-tab">
+                review
+              </a>
+            </div>
+            <div class="tab-contents">
+              <div id="description" class="b-tab active">
+                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, nostrud ipsum consectetur sed do, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
+                 <ul>
+                  <li style="list-style: circle;">Any Product types that You want – Simple, Configurable</li>
+                  <li style="list-style: circle;">
+                    Downloadable / Digital Products, Virtual Products</li>
+                    <li style="list-style: circle;">Inventory Management with Backordered items</li>
+                 </ul>
+
+                 <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div>
+              <div id="Shipping" class="b-tab">
+                 <div class="paragraph">
+                  <h4>Returns Policy</h4>
+                  <p>You may return most new, unopened items within 7 days of delivery for a full refund. We'll also pay the return shipping costs if the return is a result of our error (you received an incorrect or defective item, etc.).</p>
+                  <p>You should expect to receive your refund within four weeks of giving your package to the return shipper, however, in many cases you will receive a refund more quickly. This time period includes the transit time for us to receive your return from the shipper (5 to 10 business days), the time it takes us to process your return once we receive it (3 to 5 business days), and the time it takes your bank to process our refund request (5 to 10 business days).</p>
+                  <p>If you need to return an item, simply login to your account, view the order using the "Complete Orders" link under the My Account menu and click the Return Item(s) button. We'll notify you via e-mail of your refund once we've received and processed the returned item.</p>
+                 </div>
+                 <div class="paragraph">
+                  <h4>Shipping</h4>
+                  <p>We can ship to virtually any address in the world. Note that there are restrictions on some products, and some products cannot be shipped to international destinations.</p>
+                  <p>When you place an order, we will estimate shipping and delivery dates for you based on the availability of your items and the shipping options you choose. Depending on the shipping provider you choose, shipping date estimates may appear on the shipping quotes page.</p>
+                  <p>Please also note that the shipping rates for many items we sell are weight-based. The weight of any such item can be found on its detail page. To reflect the policies of the shipping companies we use, all weights will be rounded up to the next full pound.</p>
+                 </div>
+              </div>
+              <div id="review" class="b-tab">
+                <div class="no-riview">
+                  <h4>Reviews</h4>
+
+                <p>There are no reviews yet.</p>
+                <div class="row">
+                  <div class="col-md-12 p-5" style="background-color:#f4f4f4 ;">
+                      <form action="">
+                          <div class="mb-3">
+                              <label class="form-label fw-bold">Your Rating</label>
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label fw-bold">Your Review</label>
+                              <textarea class="form-control ratingmessage" name="ratingmessage" rows="3"></textarea>
+                              <b><span class="spanreview text-danger"></span></b>
+          
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label fw-bold">Name</label>
+                              <input type="text" class="form-control yourname" name="yourname" aria-describedby="emailHelp">
+                              <b><span class="spanname text-danger"></span></b>
+          
+                          </div>
+                          <div class="mb-3">
+                              <label class="form-label fw-bold">Email</label>
+                              <input type="email" class="form-control email" name="email" aria-describedby="emailHelp">
+                              <b><span class="spanemail text-danger"></span></b>
+          
+                          </div>
+                          <div class="mb-3 form-check">
+                              <input type="checkbox" class="form-check-input checked" name="checked" id="exampleCheck1">
+                              <label class="form-check-label fw-bold" for="exampleCheck1">Save my name, email, and website in this
+                                  browser for the next time I comment.</label>
+                              <b><span class="spancheck"></span></b>
+                          </div>
+                          <button class="btn btn-dark" name="submit" id="submit">Submit</button>
+                      </form>
+                  </div>
+              </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="releted-product">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title-head">
+            <h3>Releted Products</h3>
+          </div>
+        </div>
+        <div class="col-12">
+
+          <div class="swiper mySwiperrp">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="product-container">
+                  <div class="pro-img">
+                      <div class="watchlist">
+                          <i class="bi bi-bag-heart"></i>
+                      </div>
+                      <img class="img-fluid" src="img/pro1.jpg" alt="">
+                      <div class="quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                          <p>Quick View</p>
+                      </div>
+                  </div>
+                  <div class="product-txt">
+                      <span class="pro-categories">
+                          <a href="#">Audio Amplifier</a>
+                          <a href="#">Electronic Cigarettes</a>
+                      </span>
+                      <h3>Beats Solo HD Drenched</h3>
+                      <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </div>
+                      <h4>300.00</h4>
+                  </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-container">
+                  <div class="pro-img">
+                      <div class="watchlist">
+                          <i class="bi bi-bag-heart"></i>
+                      </div>
+                      <img class="img-fluid" src="img/pro1.jpg" alt="">
+                      <div class="quick-view" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">
+                          <p>Quick View</p>
+                      </div>
+                  </div>
+                  <div class="product-txt">
+                      <span class="pro-categories">
+                          <a href="#">Audio Amplifier</a>
+                          <a href="#">Electronic Cigarettes</a>
+                      </span>
+                      <h3>Beats Solo HD Drenched</h3>
+                      <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </div>
+                      <h4>300.00</h4>
+                  </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-container">
+                  <div class="pro-img">
+                      <div class="watchlist">
+                          <i class="bi bi-bag-heart"></i>
+                      </div>
+                      <img class="img-fluid" src="img/pro1.jpg" alt="">
+                      <div class="quick-view" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">
+                          <p>Quick View</p>
+                      </div>
+                  </div>
+                  <div class="product-txt">
+                      <span class="pro-categories">
+                          <a href="#">Audio Amplifier</a>
+                          <a href="#">Electronic Cigarettes</a>
+                      </span>
+                      <h3>Beats Solo HD Drenched</h3>
+                      <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </div>
+                      <h4>300.00</h4>
+                  </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-container">
+                  <div class="pro-img">
+                      <div class="watchlist">
+                          <i class="bi bi-bag-heart"></i>
+                      </div>
+                      <img class="img-fluid" src="img/pro1.jpg" alt="">
+                      <div class="quick-view" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">
+                          <p>Quick View</p>
+                      </div>
+                  </div>
+                  <div class="product-txt">
+                      <span class="pro-categories">
+                          <a href="#">Audio Amplifier</a>
+                          <a href="#">Electronic Cigarettes</a>
+                      </span>
+                      <h3>Beats Solo HD Drenched</h3>
+                      <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </div>
+                      <h4>300.00</h4>
+                  </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-container">
+                  <div class="pro-img">
+                      <div class="watchlist">
+                          <i class="bi bi-bag-heart"></i>
+                      </div>
+                      <img class="img-fluid" src="img/pro1.jpg" alt="">
+                      <div class="quick-view" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">
+                          <p>Quick View</p>
+                      </div>
+                  </div>
+                  <div class="product-txt">
+                      <span class="pro-categories">
+                          <a href="#">Audio Amplifier</a>
+                          <a href="#">Electronic Cigarettes</a>
+                      </span>
+                      <h3>Beats Solo HD Drenched</h3>
+                      <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </div>
+                      <h4>300.00</h4>
+                  </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="product-container">
+                  <div class="pro-img">
+                      <div class="watchlist">
+                          <i class="bi bi-bag-heart"></i>
+                      </div>
+                      <img class="img-fluid" src="img/pro1.jpg" alt="">
+                      <div class="quick-view" data-bs-toggle="modal"
+                          data-bs-target="#exampleModal">
+                          <p>Quick View</p>
+                      </div>
+                  </div>
+                  <div class="product-txt">
+                      <span class="pro-categories">
+                          <a href="#">Audio Amplifier</a>
+                          <a href="#">Electronic Cigarettes</a>
+                      </span>
+                      <h3>Beats Solo HD Drenched</h3>
+                      <div class="rating">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                      </div>
+                      <h4>300.00</h4>
+                  </div>
+              </div>
+              </div>
+              <div class="swiper-slide">
+                 <div class="product-container">
+            <div class="pro-img">
+                <div class="watchlist">
+                    <i class="bi bi-bag-heart"></i>
+                </div>
+                <img class="img-fluid" src="img/pro1.jpg" alt="">
+                <div class="quick-view" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    <p>Quick View</p>
+                </div>
+            </div>
+            <div class="product-txt">
+                <span class="pro-categories">
+                    <a href="#">Audio Amplifier</a>
+                    <a href="#">Electronic Cigarettes</a>
+                </span>
+                <h3>Beats Solo HD Drenched</h3>
+                <div class="rating">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                </div>
+                <h4>300.00</h4>
+            </div>
+        </div>
+              </div>
+ 
+            </div>
+             
+          </div>
+        
+         
+        </div>
+      </div>
+    </div>
+
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Quick View</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                    aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="model-cont d-flex">
+                    <div class="model-pro-img">
+                        <img src="img/product/pro1.jpg" alt="">
+                    </div>
+                    <div class="model-pro-txt">
+                        <h2>Beats Solo HD Drenched</h2>
+                        <div class="rating">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                        </div>
+                        <h2 class="mt-3">300.00</h2>
+                        <div class="pro-discription">
+                            Pellentesque habitant morbi tristique senectus et netus et
+                            malesuada fames ac turpis egestas. Vestibulum tortor quam,
+                            feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu
+                            libero sit amet quam egestas semper. Aenean ultricies mi vitae
+                            est. Mauris placerat eleifend leo.
+                        </div>
+                        <div class="model-categories text-secondary fw-bold mt-3">
+                            CATEGORIES: <strong class="text-dark ms-2"> AUDIO
+                                AMPLIFIER</strong>
+                        </div>
+                        <div class="quantity-counter">
+                            <button>-</button>
+                            <input type="number">
+                            <button>+</button>
+                        </div>
+                        <div class="model-cart py-3">
+                            <div class="model-cart-btn">
+                                <i class="bi bi-bag-heart"></i> Add to cart
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"
+                    data-bs-dismiss="modal">Close</button>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+ 
+
+  <section class="resently-view my-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="title-head">
+            <h3> Recently Viewed Products</h3>
+          </div>
+         
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-3">
+           <div class="cate-pro-style">
+            <div class="cate-pro-img">
+              <img class="img-fluid" src="img/7402TELMAIN1_785x.webp" alt="">
+              <div class="cate-pro-bot-bar">
+                <button>Choose Options</button>
+                <p><i class="bi bi-heart"></i> add To Wishlist</p>
+              </div>
+            </div>
+             <div class="cate-pro-txt">
+              <h6 class="m-0">Porto Extended Layout</h6>
+              <div class="d-flex gap-2 justify-content-center align-items-center">
+                <div class="rating">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+              </div>
+              <p class="m-0" style="font-size: 14px;">36 reviews</p>
+              </div>
+              <div class="cate-pro-price">
+                <p style="color: gray;">From <strong style="color: black;">&#8377;90.00</strong>
+                </p>
+              </div>
+             </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="pro-menu-bar">
+    <div class="pro-menu-bar-cont">
+      <div class="pro-menu-left">
+        <div class="pro-menu-img">
+          <img width="100px" src="img/dummy-pro1.jpg" alt="">
+        </div>
+        <div class="pro-menu-txt">
+          <p class="m-0">Porto Extended Layout</p>
+          <h5>&#8377; 299.00</h5>
+        </div>
+      </div>
+      <div class="pro-menu-right">
+        <div class="quantity m-0 mob-dis-none">
+          <a href="#" class="quantity__minus"><span>-</span></a>
+          <input name="quantity" type="text" class="quantity__input" value="1">
+          <a href="#" class="quantity__plus"><span>+</span></a>
+        </div>
+        <div class="like-icn only-mob-dis">
+          <i class="bi bi-heart"></i>
+        </div>
+        <button class="crt-btn">
+          Add to cart
+         </button>
+      </div>
+    </div>
+  </section>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+  integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"
+    integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- swiper js -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+<script src="./js/script.js"></script>
+
+</html>

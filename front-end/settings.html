@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <style>
+        .error .error {
+            color: red;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 7px
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="all-page-title a-banner">
+        <img height="100px" src="./img/banner/b2.jpeg" alt="">
+        <div class="a-banner-caption">
+            <div class="r row">
+                <div class="col-sm-12 col c">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>settings</li>
+                    </ul>
+                    <h1>settings</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Settings -->
+    <section class="account">
+        <div class="row fadeInUp r">
+            <div class="col-md-3 productbar">
+                <h6>Hi, Username</h6>
+                <ul>
+                    <li><a href="./account.html">Account</a></li>
+                    <li><a href="./settings.html">Settings</a></li>
+                    <li><a href="./history.html">History</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-9">
+                <!-- Update User Information -->
+                <form method="post" id="register">
+                    <div class="row">
+                        <div class="col-sm-12 m-30">
+                            <h4>Personal Info</h4>
+                            <label for="FirstName">First Name</label>
+                            <input type="text" name="FirstName" id="FirstName" />
+                            <span class="error text-danger" id="FirstName-error"></span>
+                            <label for="LastName">Last Name</label>
+                            <input type="text" name="LastName" id="LastName" />
+                            <span class="error text-danger" id="LastName-error"></span>
+                            <label for="EmailAddress">Email Address</label>
+                            <input type="email" name="EmailAddress" id="EmailAddress" />
+                            <span class="error text-danger" id="EmailAddress-error"></span>
+                            <label for="DOB">Date of Birth </label>
+                            <input type="date" id="DOB" name="DOB" />
+                            <span class="error text-danger" id="DOB-error"></span>
+                        </div>
+
+                        <div class="col-sm-12 m-30">
+                            <h4>Phone Numbers</h4>
+                            <label for="WorkPhone">Work Phone Number</label>
+                            <input type="text" name="WorkPhone" id="WorkPhone">
+                            <span class="error text-danger" id="WorkPhone-error"></span>
+                            <label for="HomePhone">Home Phone Number</label>
+                            <input type="text" name="HomePhone" id="HomePhone">
+                            <span class="error text-danger" id="HomePhone-error"></span>
+                            <label for="CellPhone">Cell Phone Number</label>
+                            <input type="text" name="CellPhone" id="CellPhone">
+                            <span class="error text-danger" id="CellPhone-error"></span>
+                        </div>
+
+                        <!-- //.columns.large-6 -->
+                        <div class="col-lg-6 m-30">
+                            <h4>Home Address</h4>
+                            <label for="HomeAddress">Home Address</label>
+                            <input type="text" name="HomeAddress" id="HomeAddress">
+                            <span class="error text-danger" id="HomeAddress-error"></span>
+                            <label for="HomeCountry">Country</label>
+                            <select name="HomeCountry" id="HomeCountry">
+                                <option value="">-- Select Country --</option>
+                            </select>
+                            <span class="error text-danger" id="HomeCountry-error"></span>
+                            <label for="HomeState">State</label>
+                            <select name="HomeState" id="HomeState">
+                                <option value="">-- Select State --</option>
+                            </select>
+                            <span class="error text-danger" id="HomeState-error"></span>
+                            <label for="HomeCity">City</label>
+                            <select name="HomeCity" id="HomeCity">
+                                <option value="">-- Select City --</option>
+                            </select>
+                            <span class="error text-danger" id="HomeCity-error"></span>
+                            <label for="HomeZip">Zipcode/Postcode</label>
+                            <input type="text" name="HomeZip" id="HomeZip" />
+                            <span class="error text-danger" id="HomeZip-error"></span>
+
+                        </div>
+
+                        <!-- //.columns.large-6 -->
+                        <div class="col-lg-6 m-30">
+                            <h4>Work Address</h4>
+                            <label for="WorkAddress">Work Address</label>
+                            <input type="text" name="WorkAddress" id="WorkAddress">
+                            <span class="error text-danger" id="WorkAddress-error"></span>
+                            <label for="WorkCountry">Country</label>
+                            <select name="WorkCountry" id="WorkCountry">
+                                <option value="">-- Select Country --</option>
+                            </select>
+                            <span class="error text-danger" id="WorkCountry-error"></span>
+                            <label for="WorkState">State</label>
+                            <select name="WorkState" id="WorkState">
+                                <option value="">-- Select State --</option>
+                            </select>
+                            <span class="error text-danger" id="WorkState-error"></span>
+                            <label for="WorkCity">City</label>
+                            <select name="WorkCity" id="WorkCity">
+                                <option value="">-- Select City --</option>
+                            </select>
+                            <span class="error text-danger" id="WorkCity-error"></span>
+                            <label for="WorkZip">Zipcode/Postcode</label>
+                            <input type="text" name="WorkZip" id="WorkZip" />
+                            <span class="error text-danger" id="WorkZip-error"></span>
+
+                        </div>
+
+                        <!-- //.columns.large-6 -->
+                        <div class="col-lg-6 end">
+                            <h4>Username and Password</h4>
+                            <label for="UserName">Username</label>
+                            <input type="text" name="UserName" id="UserName" />
+                            <span class="error text-danger" id="UserName-error"></span>
+                            <label for="Password">Password</label>
+                            <input type="password" name="Password" id="Password" />
+                            <span class="error text-danger" id="Password-error"></span>
+                            <label for="PasswordConfirm">Confirm Password</label>
+                            <input type="password" name="PasswordConfirm" id="PasswordConfirm" />
+                            <span class="error text-danger" id="PasswordConfirm-error"></span>
+
+                            <button type="submit" class="button">Update</button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+
+
+    <script>
+
+        $(document).ready(function () {
+            $('.error').hide()
+        })
+        $(function () {
+            var $registerForm = $("#register");
+
+            $registerForm.validate({
+                rules: {
+                    FirstName: {
+                        required: true,
+                        lattersonly: true
+                    },
+                    LastName: {
+                        required: true,
+                        lattersonly: true
+                    },
+                    EmailAddress: {
+                        required: true,
+                        email: true
+                    },
+                    DOB: {
+                        required: true,
+                    },
+                    WorkPhone: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 12,
+                        numbersonly: true
+                    },
+                    HomePhone: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 12,
+                        numbersonly: true
+                    },
+                    CellPhone: {
+                        required: true,
+                        minlength: 10,
+                        maxlength: 12,
+                        numbersonly: true
+                    },
+                    HomeAddress: {
+                        required: true,
+                        minlength: 20
+                    },
+                    HomeCountry: {
+                        required: true
+                    },
+                    HomeState: {
+                        required: true
+                    },
+                    HomeCity: {
+                        required: true
+                    },
+                    HomeZip: {
+                        required: true,
+                        maxlength: 6,
+                        numbersonly: true
+                    },
+                    WorkAddress: {
+                        required: true,
+                        minlength: 20
+                    },
+                    WorkCountry: {
+                        required: true
+                    },
+                    WorkState: {
+                        required: true
+                    },
+                    WorkCity: {
+                        required: true
+                    },
+                    WorkZip: {
+                        required: true,
+                        maxlength: 6,
+                        numbersonly: true
+                    },
+                    UserName: {
+                        required: true,
+                        lattersonly: true
+                    },
+                    Password: {
+                        required: true,
+                        all: true
+                    },
+                    PasswordConfirm: {
+                        required: true,
+                        equalTo: '#Password'
+                    },
+                },
+                messages: {
+                    FirstName: {
+                        required: 'FirstName is Required',
+                        lattersonly: 'Enter only Latters in FirstName'
+                    },
+                    LastName: {
+                        required: 'LastName is Required',
+                        lattersonly: 'Enter only Latters LastName'
+                    },
+                    EmailAddress: {
+                        required: 'EmailAddress is Required',
+                        email: 'EmailAddress invalid'
+                    },
+                    DOB: {
+                        required: 'DOB is Required',
+                    },
+                    WorkPhone: {
+                        required: 'WorkPhone is Required',
+                        minlength: 'WorkPhone min Length is 10',
+                        maxlength: 'WorkPhone max Length is 12',
+                        numbersonly: 'Enter only numbers in HomePhone'
+                    },
+                    HomePhone: {
+                        required: 'HomePhone is Required',
+                        minlength: 'HomePhone min Length is 10',
+                        maxlength: 'HomePhone max Length is 12',
+                        numbersonly: 'Enter only numbers in HomePhone'
+                    },
+                    CellPhone: {
+                        required: 'CellPhone is Required',
+                        minlength: 'CellPhone min Length is 10',
+                        maxlength: 'CellPhone max Length is 12',
+                        numbersonly: 'Enter only numbers in CellPhone'
+                    },
+                    HomeAddress: {
+                        required: 'HomeAddress is Required',
+                        minlength: 'HomeAddress Length is too short'
+                    },
+                    HomeCountry: {
+                        required: 'HomeCountry is Required'
+                    },
+                    HomeState: {
+                        required: 'HomeState is Required HomeState'
+                    },
+                    HomeCity: {
+                        required: 'HomeCity is Required'
+                    },
+                    HomeZip: {
+                        required: 'HomeZip is Required',
+                        maxlength: 'HomeZip max Length is 6',
+                        numbersonly: 'Enter only numbers in'
+                    },
+                    WorkAddress: {
+                        required: 'WorkAddress is Required',
+                        minlength: 'WorkAddress Length is too short'
+                    },
+                    WorkCountry: {
+                        required: 'WorkCountry is Required'
+                    },
+                    WorkState: {
+                        required: 'WorkState is Required'
+                    },
+                    WorkCity: {
+                        required: 'WorkCity is Required'
+                    },
+                    WorkZip: {
+                        required: 'WorkZip is Required',
+                        maxlength: 'WorkZip max Length is 6',
+                        numbersonly: 'Enter only numbers in WorkZip'
+                    },
+                    UserName: {
+                        required: 'UserName is Required',
+                        lattersonly: 'Enter only Letters in UserName'
+                    },
+                    Password: {
+                        required: 'Password is Required',
+                        all: 'Space is not allowed'
+                    },
+                    PasswordConfirm: {
+                        required: 'PasswordConfirm is Required',
+                        equalTo: 'Password not Match'
+                    },
+                },
+                onfocusout: function (element) {
+                    $(element).valid();
+                },
+                errorPlacement: function (error, element) {
+                    $('.error').show()
+                    switch (element.attr("name")) {
+                        case "FirstName":
+                            error.appendTo("#FirstName-error");
+                            break;
+                        case "LastName":
+                            error.appendTo("#LastName-error");
+                            break;
+                        case "EmailAddress":
+                            error.appendTo("#EmailAddress-error");
+                            break;
+                        case "DOB":
+                            error.appendTo("#DOB-error");
+                            break;
+                        case "WorkPhone":
+                            error.appendTo("#WorkPhone-error");
+                            break;
+                        case "HomePhone":
+                            error.appendTo("#HomePhone-error");
+                            break;
+                        case "CellPhone":
+                            error.appendTo("#CellPhone-error");
+                            break;
+                        case "HomeAddress":
+                            error.appendTo("#HomeAddress-error");
+                            break;
+                        case "HomeCountry":
+                            error.appendTo("#HomeCountry-error");
+                            break;
+                        case "HomeState":
+                            error.appendTo("#HomeState-error");
+                            break;
+                        case "HomeCity":
+                            error.appendTo("#HomeCity-error");
+                            break;
+                        case "HomeZip":
+                            error.appendTo("#HomeZip-error");
+                            break;
+                        case "WorkAddress":
+                            error.appendTo("#WorkAddress-error");
+                            break;
+                        case "WorkCountry":
+                            error.appendTo("#WorkCountry-error");
+                            break;
+                        case "WorkState":
+                            error.appendTo("#WorkState-error");
+                            break;
+                        case "WorkCity":
+                            error.appendTo("#WorkCity-error");
+                            break;
+                        case "WorkZip":
+                            error.appendTo("#WorkZip-error");
+                            break;
+                        case "UserName":
+                            error.appendTo("#UserName-error");
+                            break;
+                        case "Password":
+                            error.appendTo("#Password-error");
+                            break;
+                        case "PasswordConfirm":
+                            error.appendTo("#PasswordConfirm-error");
+                            break;
+                    }
+                }
+            })
+
+            jQuery.validator.addMethod('lattersonly', function (value, element) {
+                return /^[^-\s][a-zA-Z_\s-]+$/.test(value);
+            });
+
+            jQuery.validator.addMethod('numbersonly', function (value, element) {
+                return /^[^-\s][0-9]+$/.test(value);
+            });
+
+            jQuery.validator.addMethod('all', function (value, element) {
+                return /^[^-\s][a-zA-Z0-9_\s-]+$/.test(value);
+            });
+        })
+
+    </script>
+
+</body>
+
+</html>

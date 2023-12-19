@@ -1,0 +1,69 @@
+
+.bor-table{
+    margin: 30px;
+    border: 4px solid black;
+}
+.header {
+    background-color: rgb(134 212 248 / 35%);;
+}
+
+.header-cont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date {
+    font-size: 20px;
+    font-weight: 500;
+}
+.saperator{
+    border: 3px solid #989998;
+    margin: 30px 0;
+}
+.comp-name{
+    display: flex;
+    gap: 100px;
+}
+.info p{
+    font-family: sans-serif;
+    color: #545252;
+}
+.info h6{
+    margin: 0;
+color: #07597e;
+margin-bottom: 3px;
+font-weight: 700;
+font-size: 19px;
+}
+.biling-info h2{
+    font-weight: 700;
+
+margin-bottom: 30px;
+margin-top: 10px;
+margin-bottom: 30px;
+color: #545252;
+font-size: 39px;
+
+}
+
+.tbl_heading{
+    border-radius: 10px;
+    background-color: rgb(134 212 248 / 35%) !important;
+    font-size: 18px;
+    padding: 10px;
+    border-color: none !important;
+   
+}
+.tbl-data{
+    border-radius: 10px;
+    background-color: rgb(134 212 248 / 10%) !important;
+font-size: 18px;
+padding: 10px;
+}
+tr{
+    margin: 0 3px;
+}
+.bor-bot{
+    border-bottom: 3px solid black;
+}

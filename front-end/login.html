@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/animate.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
+    <style>
+        .error .error{
+            color: red;
+            margin: 0;
+            padding: 0;
+            margin-left: 20px;
+            margin-bottom: 7px
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <section class="all-page-title a-banner">
+        <img height="100px" src="./img/banner/b2.jpeg" alt="">
+        <div class="a-banner-caption">
+            <div class="r row">
+                <div class="col-sm-12 col c">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>LogIn</li>
+                    </ul>
+                    <h1>LogIn</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Settings -->
+    <section class="account">
+        <div class="row r justify-content-center">
+            <div class="col-md-9">
+                <!-- Update User Information -->
+                <form method="post" id="login">
+                    <div class="row">
+
+                        <!-- //.columns.large-6 -->
+                        <div class="col-lg-8 end">
+                            <h4 style="margin: 0 0 35px; font-size: 35px; font-family: 'Pathway Gothic One';">LOGIN</h4>
+
+                            <input type="email" name="email" id="email" placeholder="Your Email Address" />
+                            <span class="error" id="email-error"></span>
+                            <input type="password" name="password" id="password" placeholder="password" />
+                            <span class="error" id="password-error"></span>
+
+                            <button type="submit" class="button" style="margin: 15px 0 0;min-width: 135px;">Login <i
+                                    class="fas fa-angle-right"></i></button>
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        $(document).ready(function () {
+            $('.error').hide()
+        })
+        $(function () {
+            var $loginform = $("#login");
+
+            $loginform.validate({
+                rules: {
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        all: true
+                    },
+                },
+                messages: {
+                    email: {
+                        required: 'email must be required',
+                        email: 'email invalid'
+                    },
+                    password: {
+                        required: 'password must be required',
+                        all: 'space is not allowed'
+                    },
+                },
+                onfocusout: function (element) {
+                    $(element).valid();
+                },
+                errorPlacement: function (error, element) {
+                    $('.error').show()
+                    switch (element.attr("name")) {
+                        case "email":
+                            error.appendTo("#email-error");
+                            break;
+                        case "password":
+                            error.appendTo("#password-error");
+                            break;
+                    }
+                }
+            })
+
+            jQuery.validator.addMethod('all', function (value, element) {
+                return /^[^-\s][a-zA-Z0-9_\s-]+$/.test(value);
+            });
+        })
+    </script>
+
+
+</body>
+
+</html>

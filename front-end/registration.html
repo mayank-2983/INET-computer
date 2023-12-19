@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/animate.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Pathway+Gothic+One" rel="stylesheet">
+</head>
+<body>
+        <section class="all-page-title a-banner">
+            <img height="100px" src="./img/banner/b2.jpeg" alt="">
+            <div class="a-banner-caption" >
+                <div class="r row">
+                    <div class="col-sm-12 col c">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li>Registration</li>
+                        </ul>
+                        <h1>Registration</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Settings -->
+        <section class="account">
+            <div class="row  r justify-content-center">
+                <div class="col-md-9">
+                    <!-- Update User Information -->
+                    <form action="" method="post">
+                        <div class="row">
+                            <div class="col-sm-12 m-30">
+                                <h4>Registration</h4>
+                                <label for="FirstName">First Name</label>
+                                <input type="text" name="FirstName" id="FirstName" />
+                                <label for="LastName">Last Name</label>
+                                <input type="text" name="LastName" id="LastName" />
+                                <label for="EmailAddress">Email Address</label>
+                                <input type="email" name="EmailAddress" id="EmailAddress" />
+                                <label for="DOB">Date of Birth </label>
+                                <input type="date" id="DOB" name="DOB" />
+                            </div>
+
+                            <div class="col-sm-12 m-30">
+                                <h4>Phone Numbers</h4>
+                                <label for="WorkPhone">Work Phone Number</label>
+                                <input type="text" name="WorkPhone" id="WorkPhone">
+                                <label for="HomePhone">Home Phone Number</label>
+                                <input type="text" name="HomePhone" id="HomePhone">
+                                <label for="CellPhone">Cell Phone Number</label>
+                                <input type="text" name="CellPhone" id="CellPhone">
+                            </div>
+
+                            <!-- //.columns.large-6 -->
+                            <div class="col-lg-6 m-30">
+                                <h4>Home Address</h4>
+                                <label for="HomeAddress">Home Address</label>
+                                <input type="text" name="HomeAddress" id="HomeAddress">
+                                <label for="HomeCountry">Country</label>
+                                <select name="HomeCountry" id="HomeCountry">
+                                    <option value=" ">-- Select Country --</option>
+                                </select>
+                                <label for="HomeState">State</label>
+                                <select name="HomeState" id="HomeState">
+                                    <option value=" ">-- Select State --</option>
+                                </select>
+                                <label for="HomeCity">City</label>
+                                <select name="HomeCity" id="HomeCity">
+                                    <option value=" ">-- Select City --</option>
+                                </select>
+                                <label for="HomeZip">Zipcode/Postcode</label>
+                                <input type="text" name="HomeZip" id="HomeZip" />
+                                
+                            </div>
+
+                            <!-- //.columns.large-6 -->
+                            <div class="col-lg-6 m-30">
+                                <h4>Work Address</h4>
+                                <label for="WorkAddress">Work Address</label>
+                                <input type="text" name="WorkAddress" id="WorkAddress">
+                                <label for="WorkCountry">Country</label>
+                                <select name="WorkCountry" id="HomeCountry">
+                                    <option value=" ">-- Select Country --</option>
+                                </select>
+                                <label for="WorkState">State</label>
+                                <select name="WorkState" id="WorkState">
+                                    <option value=" ">-- Select State --</option>
+                                </select>
+                                <label for="WorkCity">City</label>
+                                <select name="WorkCity" id="WorkCity">
+                                    <option value=" ">-- Select City --</option>
+                                </select>
+                                <label for="WorkZip">Zipcode/Postcode</label>
+                                <input type="text" name="WorkZip" id="WorkZip" />
+                                
+                                
+                            </div>
+
+                            <!-- //.columns.large-6 -->
+                            <div class="col-lg-6 end">
+                                <h4>Username and Password</h4>
+                                <label for="UserName">Username</label>
+                                <input type="text" name="UserName" id="UserName" />
+                                <label for="Password">Password</label>
+                                <input type="password" name="Password" id="Password" />
+                                <label for="PasswordConfirm">Confirm Password</label>
+                                <input type="password" name="PasswordConfirm" id="PasswordConfirm" />
+                                <div class="square-checkbox">
+                                    <input type="checkbox" name="checkbox" id="checkbox">
+                                    <label for="checkbox"></label>
+                                    <p>You agree to the terms of service and privacy policy</p>
+                                </div>
+                                <button type="submit" class="button">create an account</button>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+            </div>
+        
+
+        </section>
+
+</body>
+</html>
